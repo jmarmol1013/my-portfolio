@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import anime from 'animejs'
 import {AiOutlineArrowDown} from 'react-icons/ai'
+import { Link } from 'react-scroll';
 
 export const Banner = () => {
     const [animation,setAnimation] = useState(null);
@@ -29,7 +30,7 @@ export const Banner = () => {
    
         
     return (
-        <div className='h-screen items-center text-center justify-center flex bg-[#041E40] mt-8'>
+        <div className='h-screen items-center text-center justify-center flex bg-[#041E40] mt-8' id='start'>
             <div className='text-[white] z-20 relative'>
                 <h1 className='md:text-4xl text-xl'>Hi, I am <span className='text-[#736626]'>Juan Camilo Marmolejo</span></h1>
                 <div class="content">
@@ -42,9 +43,18 @@ export const Banner = () => {
                         </div>
                     </h2>
                 </div>
-                <div className='flex justify-center items-center border-2 border-[white] rounded-md w-[70%] mx-[15%] md:w-[30%] md:mx-[35%] py-2 hover:cursor-pointer hover:bg-white hover:text-[#051326]'>
-                    <p className='mr-2'>Know more about me</p>
-                    <AiOutlineArrowDown />
+                <div className='flex mt-6 lg:mt-0 justify-center items-center border-2 border-[white] rounded-md w-[70%] mx-[15%] lg:w-[30%] lg:mx-[35%] py-2 hover:cursor-pointer hover:bg-white hover:text-[#051326]'>
+                    <Link 
+                      activeClass="active"
+                      to="nav"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      className='flex items-center'
+                    >
+                        <p className='mr-2'>Know more about me</p>
+                        <AiOutlineArrowDown />
+                    </Link>
                 </div>
             </div>
             <svg className="wave-top" width="100" viewBox="0 0 1200 250">

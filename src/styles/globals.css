@@ -1,15 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.wave-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
 }
-
+body{
+  background-color: #EBEBEB;
+}
 
 :root {
   --bg: #041E40;
@@ -21,6 +20,13 @@
   --blur: 1rem;
   --fs: clamp(3rem, 8vw, 7rem);
   --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 *,
@@ -202,5 +208,62 @@
 
   100% {
     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+}
+
+
+.card {
+  background: var(--bg);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: var(--clr-1);
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
   }
 }
