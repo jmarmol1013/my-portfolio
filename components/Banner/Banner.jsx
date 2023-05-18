@@ -30,7 +30,7 @@ export const Banner = () => {
    
         
     return (
-        <div className='h-screen items-center text-center justify-center flex bg-[#041E40] mt-8' id='start'>
+        <div className='h-screen items-center text-center justify-center flex bg-primary mt-8' id='start'>
             <div className='text-[white] z-20 relative'>
                 <h1 className='md:text-4xl text-xl'>Hi, I am <span className='text-[#736626]'>Juan Camilo Marmolejo</span></h1>
                 <div class="content">
