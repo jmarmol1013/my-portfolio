@@ -267,3 +267,10 @@ body{
     --rotate: 360deg;
   }
 }
+
+.diamond {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: rotate(45deg);
+}
