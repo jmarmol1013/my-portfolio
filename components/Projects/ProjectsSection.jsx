@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
 import { ProjectTypeList } from './ProjectTypeList';
 import { ProjectCardList } from './ProjectCardList';
-import listifyLogo from '../../public/listifyLogo.jpg'
+import listifyLogo from '../../public/ListifyLogo.jpg'
 import arboledaLogo from '../../public/ArboledaLogo.png'
 import crmLogo from '../../public/crmLogo.jpg'
 import IMSLogo from '../../public/IMSLogo.jpg'
 import collegeNetworkLogo from '../../public/CollegeNetworkLogo.jpg'
-import lakeSideLogo from '../../public/lakeSideLogo.jpg'
+import lakeSideLogo from '../../public/LakeSideLogo.jpg'
 import listifyPhoto from '../../public/ListifyPhoto.jpg'
 import IMSPhoto from '../../public/IMSPhoto.jpg'
 import arboledaPhoto from '../../public/ArboledaPhoto.jpg'
