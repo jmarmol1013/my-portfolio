@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>Camilo's Portfolio</title>
+        <title>Camilo&apos;s Portfolio</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
     <main className={`${inter.className}`}>

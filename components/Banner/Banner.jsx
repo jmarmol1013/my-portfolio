@@ -34,7 +34,7 @@ export const Banner = () => {
             <div className='text-[white] z-20 relative'>
                 <h1 className='md:text-4xl text-xl'>Hi, I am <span className='text-[#736626]'>Juan Camilo Marmolejo</span></h1>
                 <div class="content">
-                    <h2 class="title">Software Engineer
+                    <h2 className="title">Software Engineer
                         <div class="aurora">
                         <div class="aurora__item"></div>
                         <div class="aurora__item"></div>
