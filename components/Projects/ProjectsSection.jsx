@@ -14,7 +14,7 @@ import hotelPhoto from '../../public/HotelPhoto.png'
 
 export const ProjectsSection = () => {
   const [projectsSelected,setProjectSelected] = useState('All');
-  const projectTypes = ['All','Web Development','Data Analyst','Software Requirements','UI/UX Designs'];
+  const projectTypes = ['All','Web Development','Data Scientist','Software Requirements','UI/UX Designs'];
 
   const projectsSmallDescription = [{
     img:[listifyLogo,listifyPhoto],
@@ -36,13 +36,13 @@ export const ProjectsSection = () => {
     alt:'CRM Logo',
     title:'1Tel Comunnication CRM',
     description:'Developed a CRM solution for 1Tel communication. Leveraging Zoho software, I successfully implemented a robust system that allows for efficient data visualization, seamless data import and export capabilities, and streamlined automation processes.',
-    type:'Data Analyst'
+    type:'Data Scientist'
   },{
     img:[IMSLogo,IMSPhoto],
     alt:'IMS Logo',
     title:'IMS Project',
     description:'Team project to create an inventory management system of a shoe store. Developed an ERM diagram, created tables, function, sequences, procedures, triggers, cursors and work with JavaFX and Java for front-end to create a Full-Stack application.',
-    type:'Data Analyst',
+    type:'Data Scientist',
     linkProject:'https://docs.google.com/document/d/1Ln2q_TX83XRQMc6O8tRdvDZruTTzkcdS/edit',
     linkGithub:'https://github.com/jmarmol1013/ShoeStoreInventory'
   },{
