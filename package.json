@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@vercel/analytics": "^1.0.1",
     "animejs": "^3.2.1",
     "autoprefixer": "10.4.14",
     "emailjs": "^4.0.2",
