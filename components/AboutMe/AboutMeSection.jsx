@@ -19,7 +19,7 @@ export const AboutMeSection = () => {
     title:'Mobile App Developer'
   },{
     icon:BsFillClipboardDataFill,
-    title:'Data Scientist'
+    title:'Data Analyst'
   },{
     icon:SiSpeedtest,
     title:'Quality Assurance Developer'
